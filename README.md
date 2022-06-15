@@ -53,7 +53,7 @@ Concerning the command line interface provided by the `main.py` script, it allow
 
 After stoppping the streaming processes, you can close the entire program by entering `q` in the CLI provided by `main.py`. To be sure that Mininet has closed everything correctly, run `sudo mn -c` before the next execution.
 
-**Note #1:** sometimes (on the client side) `ffmpeg` detects only one stream, either the audio or the video (signalled by the presence of only one stream in the "streaming mapping" list printed before the frame, fps, time... information). In that case, just re-run the script (to obtain meaningful plots, do the same on the server side).
+**Note #1:** sometimes (on the client side) `ffmpeg` detects only one stream, either the audio or the video (signalled by the presence of only one stream in the "Stream mapping" list printed before the frame, fps, time... information). In that case, just re-run the script (to obtain meaningful plots, do the same on the server side).
 
 **Note #2:** if you want to watch the video saved by the streaming client, you can move the output file to the `shared` directory and play it on your machine by using a media player such as VLC. Moreover, if you want to try with a different video, there is also a 1080p video in the `/home/videos` directory of the server docker container.
 
