@@ -28,10 +28,12 @@ sudo python3 main.py
 ```
 This script instantiates the topology inside ComNetsEmu, deploys the containers of the streaming (server and client) services, opens a `bash` shell in both containers, and provides a command line interface (CLI) to perform various operations. Specifically, the scenario considered is depicted in Figure 1. Concerning the links in the topology, the ones connecting nodes and switches (i.e., `server-eth0 - s1-eth1` and `s2-eth2 - client-eth0`) have infinite resources, whereas the one linking the two switches (i.e., `s1-eth2 - s2-eth1`) has an initial bandwidth of 10 Mbit/s and an initial delay of 10 ms (you can change the initial configuration of the link in question by providing the right arguments to `main.py`).
 
+<br/>
 <p align="center">
     <img src="resources/topology.png" alt="Topology"/> <br/>
-    Figure 1        
+    <b> Figure 1 </b>        
 </p>
+<br/>
 
 Once you have started the `main.py` script, you can manage the streaming by acting on the `bash` shells that have been opened in the containers. In particular, to start streaming a video, you must move into the `home` directory of the server docker container (using `cd`) and run the following command:
 ```shell
